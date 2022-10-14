@@ -1,4 +1,6 @@
+from re import X
 from time import sleep
+from tkinter import Y
 import pygame
 import ROV_Movement
 
@@ -26,7 +28,31 @@ F_R_m = 3
 B_R_m = 4
 R_m = 5
 
+# Xbox One Controls
+# #   =====   BTNS    =====
+# A_BTN = 0
+# B_BTN = 1
+# X_BTN = 2
+# Y_BTN = 3
+# L_BUMPER_BTN = 4
+# R_BUMPER_BTN = 5
+# BACK_BTN = 6
+# START_BTN = 7
+# L_STICK_BTN = 8
+# R_STICK_BTN = 9
 
+# #   =====   AXES    =====
+# Axis 0 = Left Analog X
+# Axis 1 = Left Analog Y
+# Axis 2 = Right Analog X
+# Axis 3 = Right Analog Y
+# Axis 4 = Left Trigger
+# Axis 5 = Right Trigger
+
+# #   =====   DPAD    =====
+# Hat 0 = Sent in Tuple
+#   (X, Y) where X is right(1)/left(-1)
+#   and Y is up(1)/down(-1)
 
 def Init():
     pygame.init()
